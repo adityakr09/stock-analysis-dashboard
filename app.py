@@ -104,7 +104,7 @@ st.dataframe(forecast_df, use_container_width=True)
 
 
 # ---------- ADVANCED ARIMA FORECAST ----------
-st.subheader("📉 ARIMA Forecast (Advanced)")
+st.subheader("📉 ARIMA Forecast ")
 
 try:
     import pmdarima as pm
