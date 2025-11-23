@@ -9,7 +9,7 @@ from datetime import datetime
 # ---------- PAGE SETTINGS ----------
 st.set_page_config(page_title="Stock Analysis Dashboard", layout="wide")
 
-st.title("📊 Simple & Explainable Stock Analysis Dashboard")
+st.title("📊 Stock Analysis Dashboard")
 st.caption("End-to-end stock data analysis using Python, Pandas & Basic Trend Forecasting")
 
 CLEANED_DIR = "cleaned"  # folder where *_cleaned.csv files live
@@ -17,7 +17,7 @@ CLEANED_DIR = "cleaned"  # folder where *_cleaned.csv files live
 # ---------- HELPER FUNCTIONS ----------
 @st.cache_data
 def list_symbols():
-    """Find all *_cleaned.csv files inside cleaned/ folder."""
+   
     paths = glob.glob(os.path.join(CLEANED_DIR, "*_cleaned.csv"))
     symbols = {}
     for p in paths:
