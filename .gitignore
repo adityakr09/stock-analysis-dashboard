@@ -1,0 +1,26 @@
+# Virtual environment folders
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
+
+# Output or generated files
+outputs/
+
+                          
+   
+git init
+git add .
+git commit -m "Initial commit - Stock Market Dashboard"
+git branch -M main
+git remote add origin https://github.com/adityakr09/stock-analysis-dashboard.git
+git push -u origin main
