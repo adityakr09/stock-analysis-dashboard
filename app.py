@@ -90,7 +90,7 @@ fig.update_layout(height=500, xaxis_title="Date", yaxis_title="Price")
 st.plotly_chart(fig, use_container_width=True)
 
 # ---------- FORECAST ----------
-st.subheader("🔮 Simple Trend Forecast (Easy to Explain!)")
+st.subheader("🔮 Simple Trend Forecast")
 forecast_df = simple_linear_forecast(df, forecast_days)
 
 fig_fc = go.Figure()
@@ -131,7 +131,7 @@ try:
         "Date": arima_future_dates,
         "Predicted_Close": arima_forecast
     })
-
+   
     # Plot ARIMA Forecast
     fig_arima = go.Figure()
     fig_arima.add_trace(go.Scatter(x=df["Date"], y=df["Close"], mode="lines", name="Historical Price"))
